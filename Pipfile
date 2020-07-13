@@ -7,9 +7,11 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
 
 [requires]
 python_version = "3.7"
 
 [scripts]
-start="python flask_line.py"
+start="python run.py"
