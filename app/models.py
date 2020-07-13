@@ -25,3 +25,21 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User %r>' % self.name
+    
+    def create_user():
+        u1 = User(id="3",name="kiyokiyo3",hashed_password="cccc")
+        u2 = User(id="4",name="kiyokiyo4",hashed_password="eeee")
+        db.session.add(u1)
+        db.session.add(u2)
+        db.session.commit()
+    
+def init():
+    db.create_all()
+    
+    
+def create_date():
+    u1 = User(id="5",name="kiyokiyo5",hashed_password="cccc")
+    u2 = User(id="6",name="kiyokiyo6",hashed_password="eeee")
+    db.session.add(u1)
+    db.session.add(u2)
+    db.session.commit()
